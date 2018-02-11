@@ -97,7 +97,7 @@
     }
 
     // Pass result to next cascaded promise.
-    task.promise.resolve([result]);
+    task.promise.resolve(result);
   }
 
   MyPromise.prototype.scheduleResolvedCallback = function(task) {
